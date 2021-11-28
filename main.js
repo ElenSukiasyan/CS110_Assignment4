@@ -11,8 +11,6 @@ const mat2 = [
     [3, 2,0],
     [4, 3, 2]
 ];
-
-console.log(mat1[1])
-//console.log (mat3.sumOfMatrices(mat1,mat2))
-//console.log (mat3.matrixProduct(mat1,mat2))
-//console.log (mat3.sumOfEachRow(mat1))
+console.log (mat3.sumOfMatrices(mat1,mat2))
+console.log (mat3.matrixProduct(mat1,mat2))
+console.log (mat3.sumOfEachRow(mat1))
