@@ -11,16 +11,16 @@ module.exports = {
     
     matrixProduct: function(mat1,mat2)
     {
-        totalMat = [];
-        for ( let i=0; i<=mat1.length ;i++)
+        let totalMat = [];
+        for ( let i=0; i<=mat1.length-1 ;i++)
         {
-            let temprary = [];
-            for (let k=0; k<= mat2[0]; k++)
+            let temporary = [];
+            for (let k=0; k<= mat2[0].length-1; k++)
             {
-                sum=0;
-                for ( let j=0; j<=mat1[0].length; j++)
+                let sum=0;
+                for ( let j=0; j <= mat1[0].length-1; j++)
                 {
-                    sum = mat1[i][j] + mat2[j][k];
+                    sum = sum + (mat1[i][j] * mat2[j][k]);
                 }
                 temporary.push(sum);
             }
